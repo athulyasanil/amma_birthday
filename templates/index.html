@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>For My Amma ♡</title>
+
+    <!-- Elegant fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= FLOATING DECORATIONS ================= -->
+
+<div class="floating-decorations">
+
+    <span>♡</span>
+    <span>✦</span>
+    <span>✿</span>
+    <span>♡</span>
+    <span>✧</span>
+    <span>❀</span>
+    <span>♡</span>
+    <span>✦</span>
+
+</div>
+
+
+
+<!-- ================= PAGE 1 ================= -->
+
+<section class="page active" id="page1">
+
+    <div class="page-content opening-content">
+
+        <p class="eyebrow reveal">
+            A little something from my heart
+        </p>
+
+        <div class="script-title reveal-delay">
+            For my Amma
+        </div>
+
+        <h1 class="main-title reveal-delay-2">
+            This little world<br>
+            is for you.
+        </h1>
+
+        <div class="ornament reveal-delay-3">
+            ✦ ───── ♡ ───── ✦
+        </div>
+
+        <p class="opening-text reveal-delay-4">
+
+            Some feelings are too big for a simple
+            birthday wish. So I made you a little
+            place filled with words, memories and
+            pieces of my heart.
+
+        </p>
+
+        <button class="story-btn reveal-delay-5"
+                onclick="nextPage()">
+
+            <span>Open my little letter</span>
+
+            <span class="button-icon">♡</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PAGE 2 ================= -->
+
+<section class="page" id="page2">
+
+    <div class="page-content letter-page">
+
+        <p class="eyebrow reveal">
+            A letter I should have written long ago
+        </p>
+
+        <h2 class="page-title reveal-delay">
+            Dear Amma,
+        </h2>
+
+        <div class="script-accent reveal-delay-2">
+            from your daughter, with love
+        </div>
+
+
+        <div class="letter-text">
+
+            <p class="paragraph reveal-delay-3">
+
+                When I look back at my life, I realise
+                that so many of my memories have you
+                quietly woven into them. The little things
+                you did, the things you worried about,
+                the times you stayed beside me, and the
+                countless ways you made sure I was okay
+                have slowly become some of the things I
+                value most today.
+
+            </p>
+
+
+            <p class="paragraph reveal-delay-4">
+
+                I may grow older, have my own dreams,
+                make my own choices and eventually walk
+                through a life of my own. But there will
+                always be a part of me that looks for your
+                voice, your comfort and that feeling of
+                being home. No matter how much life
+                changes, I don't think I will ever
+                outgrow being your daughter.
+
+            </p>
+
+        </div>
+
+
+        <button class="story-btn"
+                onclick="nextPage()">
+
+            <span>There is more in my heart</span>
+
+            <span class="button-icon">→</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PAGE 3 ================= -->
+
+<section class="page" id="page3">
+
+    <div class="page-content">
+
+        <p class="eyebrow reveal">
+            The little things
+        </p>
+
+        <h2 class="page-title reveal-delay">
+            Things you may never realise
+        </h2>
+
+        <div class="script-accent reveal-delay-2">
+            but I notice them
+        </div>
+
+
+        <div class="letter-text">
+
+            <p class="paragraph reveal-delay-3">
+
+                There are so many things you do that
+                probably feel ordinary to you, but they
+                have never been ordinary to me. The way
+                you ask if I have eaten, the way you notice
+                when something is wrong even when I don't
+                say it, the way you worry about the smallest
+                things and somehow always find a way to
+                make things feel a little better.
+
+            </p>
+
+
+            <p class="paragraph reveal-delay-4">
+
+                Maybe one day I will understand the full
+                meaning of all those little sacrifices and
+                quiet acts of love. For now, I just want
+                you to know that I see them. I may not
+                always say thank you at the right time,
+                but somewhere inside me, every little thing
+                you have done has found a permanent place.
+
+            </p>
+
+        </div>
+
+
+        <button class="story-btn"
+                onclick="nextPage()">
+
+            <span>Let's look at our memories</span>
+
+            <span class="button-icon">✦</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PAGE 4 ================= -->
+
+<section class="page photo-page" id="page4">
+
+    <div class="page-content">
+
+        <p class="eyebrow reveal">
+            Little moments, forever memories
+        </p>
+
+        <h2 class="page-title reveal-delay">
+            Our Memories
+        </h2>
+
+        <div class="script-accent reveal-delay-2">
+            pieces of a life I treasure
+        </div>
+
+
+        <div class="photo-card reveal-delay-3">
+
+            <div class="photo-frame">
+
+                <img id="memoryPhoto"
+                     src="{{ url_for('static', filename='images/amma1.jpeg') }}"
+                     alt="A beautiful memory">
+
+            </div>
+
+            <div class="photo-quote"
+                 id="photoQuote">
+
+                "The best memories are the ones
+                that feel like home."
+
+            </div>
+
+        </div>
+
+
+        <div class="photo-controls">
+
+            <button class="photo-btn"
+                    onclick="previousPhoto()">
+
+                ←
+
+            </button>
+
+            <span id="photoNumber">
+                1 / 12
+            </span>
+
+            <button class="photo-btn"
+                    onclick="nextPhoto()">
+
+                →
+
+            </button>
+
+        </div>
+
+
+        <button class="story-btn"
+                onclick="nextPage()">
+
+            <span>There are still things to say</span>
+
+            <span class="button-icon">♡</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PAGE 5 ================= -->
+
+<section class="page" id="page5">
+
+    <div class="page-content">
+
+        <p class="eyebrow reveal">
+            Things I don't say enough
+        </p>
+
+        <h2 class="page-title reveal-delay">
+            If I could say everything
+        </h2>
+
+        <div class="script-accent reveal-delay-2">
+            I would start here
+        </div>
+
+
+        <div class="letter-text">
+
+            <p class="paragraph reveal-delay-3">
+
+                I don't say “thank you” for everything.
+                I don't always notice your tiredness,
+                your worries or all the things you quietly
+                put aside for me. Sometimes I get caught
+                up in my own little world and forget that
+                behind so many comfortable moments in
+                my life, there is a mother who has spent
+                years making sure I was okay.
+
+            </p>
+
+
+            <p class="paragraph reveal-delay-4">
+
+                So today, I want to say the things I should
+                probably say more often. Thank you for
+                your patience. Thank you for your strength.
+                Thank you for loving me through every
+                version of myself. And thank you for giving
+                me a kind of love that never asked me
+                to earn it.
+
+            </p>
+
+        </div>
+
+
+        <button class="story-btn"
+                onclick="nextPage()">
+
+            <span>There is something else</span>
+
+            <span class="button-icon">→</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PAGE 6 ================= -->
+
+<section class="page" id="page6">
+
+    <div class="page-content">
+
+        <p class="eyebrow reveal">
+            Because of you
+        </p>
+
+        <h2 class="page-title reveal-delay">
+            What you gave me
+        </h2>
+
+        <div class="script-accent reveal-delay-2">
+            is more than I can explain
+        </div>
+
+
+        <div class="letter-text">
+
+            <p class="paragraph reveal-delay-3">
+
+                There are parts of me that exist because
+                you were there to shape them. The way I
+                care, the way I love, the way I keep going
+                when things become difficult—somewhere
+                in all of those things, there is a little piece
+                of you. You taught me more through the
+                life you lived than through anything you
+                ever had to explain.
+
+            </p>
+
+
+            <p class="paragraph reveal-delay-4">
+
+                And when I think about what the word
+                “home” really means, I don't think of a
+                place. I think of a feeling. A feeling of
+                being known, cared for and accepted even
+                on the days when I don't have everything
+                figured out. Somehow, you have always
+                been that feeling for me.
+
+            </p>
+
+        </div>
+
+
+        <button class="story-btn"
+                onclick="nextPage()">
+
+            <span>One promise from me</span>
+
+            <span class="button-icon">♡</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PAGE 7 ================= -->
+
+<section class="page" id="page7">
+
+    <div class="page-content">
+
+        <p class="eyebrow reveal">
+            A promise from your daughter
+        </p>
+
+        <h2 class="page-title reveal-delay">
+            As life keeps changing
+        </h2>
+
+        <div class="script-accent reveal-delay-2">
+            some things never will
+        </div>
+
+
+        <div class="letter-text">
+
+            <p class="paragraph reveal-delay-3">
+
+                Life will keep changing, and I know I will
+                keep growing into someone you may not
+                always recognise as the little girl you
+                once held close. There will be new places,
+                new dreams, new responsibilities and so
+                many chapters waiting for me. But growing
+                up will never mean leaving behind the love
+                that brought me this far.
+
+            </p>
+
+
+            <p class="paragraph reveal-delay-4">
+
+                I hope that wherever life takes me, I will
+                always find ways to make you proud, make
+                you smile and give you reasons to feel that
+                all your love was worth it. And even when
+                I become older, somewhere deep inside,
+                I will always be that little girl who feels
+                safest knowing that her Amma is there.
+
+            </p>
+
+        </div>
+
+
+        <button class="story-btn"
+                onclick="nextPage()">
+
+            <span>One last thing, Amma</span>
+
+            <span class="button-icon">✦</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PAGE 8 ================= -->
+
+<section class="page final-page" id="page8">
+
+    <div class="confetti-container"></div>
+
+    <div class="page-content final-content">
+
+        <div class="big-heart reveal">
+            ♡
+        </div>
+
+        <p class="eyebrow reveal-delay">
+            And finally...
+        </p>
+
+
+        <div class="script-title final-script reveal-delay-2">
+            Happy Birthday
+        </div>
+
+
+        <h1 class="main-title reveal-delay-3">
+            Amma ❤️
+        </h1>
+
+
+        <div class="final-ornament reveal-delay-4">
+            ✦ ♡ ✦
+        </div>
+
+
+        <div class="final-text">
+
+            <p class="paragraph reveal-delay-4">
+
+                Today isn't just about celebrating another
+                year of your life. It is about celebrating the
+                person who has quietly made so much of my
+                life beautiful. If I could give you anything
+                beyond this little surprise, I would give you
+                the chance to see yourself through my eyes—
+                to see how deeply you are loved, how much
+                you are appreciated and how much of my world
+                has your fingerprints on it.
+
+            </p>
+
+
+            <p class="paragraph reveal-delay-5">
+
+                Happy Birthday, Amma. ❤️ I hope life gives
+                you back all the happiness you have spent
+                so many years giving to the people you love.
+                And whenever you wonder whether you are
+                loved enough, I hope you remember this
+                little corner of the internet made just for
+                you—and know that there will always be a
+                daughter whose heart feels a little more like
+                home because you are her mother.
+
+            </p>
+
+        </div>
+
+
+        <div class="forever-message reveal-delay-5">
+
+            I love you, always.
+
+        </div>
+
+
+        <div class="final-hearts">
+
+            ♡ &nbsp; ✦ &nbsp; ♡ &nbsp; ✦ &nbsp; ♡
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<div class="navigation">
+
+    <button id="backButton"
+            class="nav-btn"
+            onclick="previousPage()">
+
+        ←
+
+    </button>
+
+
+    <div class="page-dots">
+
+        <span class="dot active-dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+        <span class="dot"></span>
+
+    </div>
+
+
+    <button id="nextButton"
+            class="nav-btn"
+            onclick="nextPage()">
+
+        →
+
+    </button>
+
+</div>
+
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
